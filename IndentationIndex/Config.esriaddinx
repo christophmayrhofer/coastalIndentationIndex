@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>IndentationIndex</Name>
+  <AddInID>{dd507235-5b1a-4f28-aa93-07a0321661e1}</AddInID>
+  <Description>Tool to create statistics of multilevel analysis of the coastal Indentation Index (II). </Description>
+  <Version>1.0</Version>
+  <Image>Images\IndentationIndex.png</Image>
+  <Author>Christoph Mayrhofer</Author>
+  <Company>Microsoft</Company>
+  <Date>1/23/2012</Date>
+  <Targets>
+    <Target name="Desktop" version="10.0" />
+  </Targets>
+  <AddIn language="CLR" library="IndentationIndex.dll" namespace="IndentationIndex">
+    <ArcMap>
+      <Commands>
+        <Button id="Microsoft_IndentationIndex_II" class="II" message="Start the Indentation Index tool." caption="IndentationIndex" tip="Indentation Index" category="Add-In Controls" image="Images\II.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
